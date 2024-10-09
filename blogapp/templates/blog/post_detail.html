@@ -1,0 +1,7 @@
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+
+<h3>Comments:</h3>
+{% for comment in comments %}
+    <p>{{ comment.content }} - {{ comment.author }}</p>
+{% endfor %}
